@@ -1,5 +1,3 @@
-// Float
-
 .is-clearfix
   +clearfix
 
@@ -27,25 +25,25 @@
     .is-size-#{$i}#{if($target == '', '', '-' + $target)}
       font-size: $size !important
 
-+typography-size()
+      +typography-size()
 
-+mobile
-  +typography-size('mobile')
+      +mobile
+      +typography-size('mobile')
 
-+tablet
-  +typography-size('tablet')
+      +tablet
+      +typography-size('tablet')
 
-+touch
-  +typography-size('touch')
+      +touch
+      +typography-size('touch')
 
-+desktop
-  +typography-size('desktop')
+      +desktop
+      +typography-size('desktop')
 
-+widescreen
-  +typography-size('widescreen')
+      +widescreen
+      +typography-size('widescreen')
 
-+fullhd
-  +typography-size('fullhd')
+      +fullhd
+      +typography-size('fullhd')
 
 $alignments: ('centered': 'center', 'justified': 'justify', 'left': 'left', 'right': 'right')
 
@@ -55,30 +53,30 @@ $alignments: ('centered': 'center', 'justified': 'justify', 'left': 'left', 'rig
 
 @each $alignment, $text-align in $alignments
   +mobile
-    .has-text-#{$alignment}-mobile
-      text-align: #{$text-align} !important
-  +tablet
+  .has-text-#{$alignment}-mobile
+    text-align: #{$text-align} !important
+    +tablet
     .has-text-#{$alignment}-tablet
       text-align: #{$text-align} !important
-  +tablet-only
+      +tablet-only
     .has-text-#{$alignment}-tablet-only
       text-align: #{$text-align} !important
-  +touch
+      +touch
     .has-text-#{$alignment}-touch
       text-align: #{$text-align} !important
-  +desktop
+      +desktop
     .has-text-#{$alignment}-desktop
       text-align: #{$text-align} !important
-  +desktop-only
+      +desktop-only
     .has-text-#{$alignment}-desktop-only
       text-align: #{$text-align} !important
-  +widescreen
+      +widescreen
     .has-text-#{$alignment}-widescreen
       text-align: #{$text-align} !important
-  +widescreen-only
+      +widescreen-only
     .has-text-#{$alignment}-widescreen-only
       text-align: #{$text-align} !important
-  +fullhd
+      +fullhd
     .has-text-#{$alignment}-fullhd
       text-align: #{$text-align} !important
 
@@ -144,31 +142,31 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
 @each $display in $displays
   .is-#{$display}
     display: #{$display} !important
-  +mobile
+    +mobile
     .is-#{$display}-mobile
       display: #{$display} !important
-  +tablet
+      +tablet
     .is-#{$display}-tablet
       display: #{$display} !important
-  +tablet-only
+      +tablet-only
     .is-#{$display}-tablet-only
       display: #{$display} !important
-  +touch
+      +touch
     .is-#{$display}-touch
       display: #{$display} !important
-  +desktop
+      +desktop
     .is-#{$display}-desktop
       display: #{$display} !important
-  +desktop-only
+      +desktop-only
     .is-#{$display}-desktop-only
       display: #{$display} !important
-  +widescreen
+      +widescreen
     .is-#{$display}-widescreen
       display: #{$display} !important
-  +widescreen-only
+      +widescreen-only
     .is-#{$display}-widescreen-only
       display: #{$display} !important
-  +fullhd
+      +fullhd
     .is-#{$display}-fullhd
       display: #{$display} !important
 
@@ -185,78 +183,78 @@ $displays: 'block' 'flex' 'inline' 'inline-block' 'inline-flex'
   white-space: nowrap !important
   width: 0.01em !important
 
-+mobile
+  +mobile
   .is-hidden-mobile
     display: none !important
 
-+tablet
+    +tablet
   .is-hidden-tablet
     display: none !important
 
-+tablet-only
+    +tablet-only
   .is-hidden-tablet-only
     display: none !important
 
-+touch
+    +touch
   .is-hidden-touch
     display: none !important
 
-+desktop
+    +desktop
   .is-hidden-desktop
     display: none !important
 
-+desktop-only
+    +desktop-only
   .is-hidden-desktop-only
     display: none !important
 
-+widescreen
+    +widescreen
   .is-hidden-widescreen
     display: none !important
 
-+widescreen-only
+    +widescreen-only
   .is-hidden-widescreen-only
     display: none !important
 
-+fullhd
+    +fullhd
   .is-hidden-fullhd
     display: none !important
 
 .is-invisible
   visibility: hidden !important
 
-+mobile
+  +mobile
   .is-invisible-mobile
     visibility: hidden !important
 
-+tablet
+    +tablet
   .is-invisible-tablet
     visibility: hidden !important
 
-+tablet-only
+    +tablet-only
   .is-invisible-tablet-only
     visibility: hidden !important
 
-+touch
+    +touch
   .is-invisible-touch
     visibility: hidden !important
 
-+desktop
+    +desktop
   .is-invisible-desktop
     visibility: hidden !important
 
-+desktop-only
+    +desktop-only
   .is-invisible-desktop-only
     visibility: hidden !important
 
-+widescreen
+    +widescreen
   .is-invisible-widescreen
     visibility: hidden !important
 
-+widescreen-only
+    +widescreen-only
   .is-invisible-widescreen-only
     visibility: hidden !important
 
-+fullhd
+    +fullhd
   .is-invisible-fullhd
     visibility: hidden !important
 
