@@ -1,13 +1,178 @@
-$section-padding: 3rem 1.5rem !default
+$section-padding: 4em 6em !default
 $section-padding-medium: 9rem 1.5rem !default
 $section-padding-large: 18rem 1.5rem !default
 
 .section
+  position: relative
   padding: $section-padding
-  // Responsiveness
   +desktop
-    // Sizes
     &.is-medium
       padding: $section-padding-medium
     &.is-large
       padding: $section-padding-large
+
+
+/** Section header **/
+.section-header
+    text-align: center
+    margin-bottom: 6em
+    h2
+        font-size: 2.5em
+        font-weight: bold
+        display: inline-block
+        color: #373737
+    hr
+        width: 5rem
+        height: 6px
+        border: none
+        border-radius: .4rem
+        $hr-background-color: $red
+
+/** Playstore section  **/
+.playstore-ad
+    height: 90vh
+
+.ad-title-section
+    color: #FF2B4F
+    h1
+      margin-bottom: 1em
+      line-height: 1
+      font-size: 2.7em
+
+/** Learning products section **/
+.section-learning-products
+    background: #ffffff
+
+    .dots
+      left: 0
+
+    .moon
+      right: 0
+
+
+
+
+/** Search section **/
+
+$search-padding: 0 30% !default
+$search-padding-medium: 9rem 1.5rem !default
+$search-padding-large: 18rem 1.5rem !default
+    
+.search-container
+    position: relative
+    height: calc( 85vh - 64px)
+    background: url('../images/search-background.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
+    text-align: center
+    color: white
+    display: flex
+    align-items: center
+    padding: $search-padding
+    +desktop
+     &.is-medium
+        padding: $search-padding-medium
+     &.is-large
+        padding: $search-padding-large
+
+    .dots
+      right: 0;
+      top: 9em;
+    .bleap
+      bottom: 10em;
+      right: 0;
+    .leap
+      bottom: 9em;
+      right: 0;
+
+    svg
+        height: 90vh
+
+.classroom-illustration
+    img
+        position: absolute
+        left: 40%
+        bottom: -35px
+        height: 50%
+    
+
+.search-tagline
+    letter-spacing: 3px
+
+.search-box
+    width: 100%
+    margin-top: -30%;
+
+.search-input
+    position: relative
+    input
+        padding: 1rem .5rem 1rem 1rem;
+    button
+        position: absolute;
+        right: .4rem;
+        top: .3rem
+
+/** Awards section **/
+
+.awards
+    padding: 1rem 1rem
+
+    .segments
+        display: flex
+        justify-content: space-evenly
+        
+    div.segment
+        cursor: pointer
+        background: #ffffff
+        padding: 2rem 4rem
+        transition: .3s
+
+        &:hover
+            // box-shadow: $box-shadow
+            transform: translateY(-.6rem)
+
+        .segment-title
+            margin-top: .5rem
+
+/** Super segment **/
+
+.super-segment-container
+    margin-top: 10em;
+
+    div.segment
+        cursor: pointer
+        background: #ffffff
+        padding: 2rem 4rem
+        transition: .3s
+        text-align: center
+        color: #000000
+        font-weight: bold
+
+        &:hover
+            // box-shadow: $box-shadow
+            transform: translateY(-.6rem)
+
+        .segment-title
+            margin-top: .5rem
+
+.section-we-have
+    .segment
+        cursor: pointer
+        padding: 2rem 4rem
+        transition: .3s
+        text-align: center
+
+    .we-have-title
+        color: #000000
+        line-height: 1
+        font-size: 2.3em
+        font-weight: bold
+
+.section-awards
+    .award
+        cursor: pointer
+        padding: 2rem 4rem
+        transition: .3s
+        text-align: center
+        background: #ffffff

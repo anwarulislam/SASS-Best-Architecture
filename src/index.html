@@ -32,7 +32,7 @@
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
 
-                    <div class="navbar-item has-dropdown is-hoverable">
+                    <!-- <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">
                             More
                         </a>
@@ -52,13 +52,13 @@
                                 Report an issue
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-light">
+                            <a class="button login-btn">
                                 লগিন
                             </a>
                             <a class="button is-primary">
@@ -75,17 +75,21 @@
 
     <section class="search-container no-border">
 
+        <img class="is-absolute dots" src="./assets/images/header/dots.svg" alt="">
+        <img class="is-absolute leap" src="./assets/images/header/leap.png" alt="">
+        <img class="is-absolute bleap" src="./assets/images/header/bleap.png" alt="">
+
         <div class="search-box">
-            <h1>
+            <h1 class="search-header-title">
                 Learn Anything!
             </h1>
-            <p class="search-tagline">
+            <p class="search-header-tagline">
                 Search anything you want
             </p>
 
             <form class="search-input">
-                <input type="text" name="search" placeholder="Search">
-                <button type="submit" class="btn">Search</button>
+                <input type="text" class="input is-medium" name="search" placeholder="Search">
+                <button type="submit" class="button is-primary">Search</button>
             </form>
         </div>
 
@@ -96,27 +100,27 @@
     </section>
 
 
-    <section class="super-segment-container">
-        <div class="segments">
-            <div class="segment">
+    <section class="section super-segment-container">
+        <div class="columns justify-between">
+            <div class="segment column is-narrow">
                 <img src="./assets/images/isegment.png" alt="segment">
                 <h3 class="segment-title">
                     ১ম - দ্বাদশ শ্রেণী
                 </h3>
             </div>
-            <div class="segment">
+            <div class="segment column is-narrow">
                 <img src="./assets/images/isegment.png" alt="segment">
                 <h3 class="segment-title">
                     ১ম - দ্বাদশ শ্রেণী
                 </h3>
             </div>
-            <div class="segment">
+            <div class="segment column is-narrow">
                 <img src="./assets/images/isegment.png" alt="segment">
                 <h3 class="segment-title">
                     ১ম - দ্বাদশ শ্রেণী
                 </h3>
             </div>
-            <div class="segment">
+            <div class="segment column is-narrow">
                 <img src="./assets/images/isegment.png" alt="segment">
                 <h3 class="segment-title">
                     ১ম - দ্বাদশ শ্রেণী
@@ -125,14 +129,17 @@
         </div>
     </section>
 
-    <section class="playstore-ad">
+    <section class="section playstore-ad">
 
         <div class="ad-title-section">
+
             <h1>
-                বাংলাদেশের সবচেয়ে বড় <br>
+                বাংলাদেশের সবচেয়ে বড়<br>
                 অনলাইন ক্লাসরুমে স্বাগতম!
             </h1>
-            <img src="./assets/images/10msblack.png" height="48px" alt="playstore image">
+            <a href="https://play.google.com/store/apps/details?id=com.a10minuteschool.tenminuteschool">
+                <img src="./assets/images/playstore-ad.png" height="48px" alt="playstore image">
+            </a>
         </div>
 
         <div class="mobile-bg-1">
@@ -143,28 +150,174 @@
         </div>
     </section>
 
-    <section class="section-we-have">
+    <section class="section section-we-have">
         <div class="section-header">
             <h2>We Have!</h2>
             <hr>
         </div>
+
+        <div class="columns justify-between">
+            <div class="segment column is-narrow">
+                <img src="./assets/images/we-have/videos.png" alt="segment">
+                <h3 class="we-have-title">
+                    12,000+
+                </h3>
+                <p class="we-have-tag">Academic Videos</p>
+            </div>
+            <div class="segment column is-narrow">
+                <img src="./assets/images/we-have/quizzes.png" alt="segment">
+                <h3 class="we-have-title">
+                    4,000+
+                </h3>
+                <p class="we-have-tag">Quizzes</p>
+            </div>
+            <div class="segment column is-narrow">
+                <img src="./assets/images/we-have/smartbooks.png" alt="segment">
+                <h3 class="we-have-title">
+                    900+
+                </h3>
+                <p class="we-have-tag">SmartBook</p>
+            </div>
+            <div class="segment column is-narrow">
+                <img src="./assets/images/we-have/blogs.png" alt="segment">
+                <h3 class="we-have-title">
+                    980+
+                </h3>
+                <p class="we-have-tag">Blog</p>
+            </div>
+        </div>
     </section>
 
 
-    <section class="section-learning-products">
+    <section class="section section-learning-products">
+
+
+        <img class="is-absolute dots" src="./assets/images/learning-products/dots.svg" alt="">
+        <img class="is-absolute moon" src="./assets/images/learning-products/moon.svg" alt="">
+
+
+
         <div class="section-header">
             <h2>Learning Products</h2>
             <hr>
         </div>
+
+        <div class="learning-products columns is-multiline space-evenly">
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/10ms-blog.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/10ms-global.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/10ms-show.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/airtel-admission-live.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/airtel-hsc-test.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/airtel-ssc-test.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/masterclass.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/science-show.png">
+            </div>
+            <div class="column is-narrow">
+                <img src="./assets/images/learning-products/smartbook.png">
+            </div>
+        </div>
     </section>
 
 
-    <section class="section-awards">
+    <section class="section section-awards">
         <div class="section-header">
             <h2>Awards!</h2>
             <hr>
         </div>
+
+        <div class="awards columns is-multiline">
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/apicta.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/bia2018.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/brac-marathon.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/global-et.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/glomo.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/gold-elearning.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/ict-award.png">
+            </div>
+            <div class="column is-one-quarter award is-narrow">
+                <img src="./assets/images/awards/queen-young.png">
+            </div>
+        </div>
     </section>
+
+
+
+    <footer>
+        <div class="illustration">
+            <img class="footer-table" src="./assets/images/footer/table.png" alt="">
+        </div>
+        <div class="footer section">
+            <div class="columns">
+                <div class="column">
+                    <img src="./assets/images/10msblack.png" alt="">
+                </div>
+                <div class="column">
+                    <h5 class="footer-links-header">Products</h5>
+                    <ul>
+                        <li><a href="">Admission LIVE</a></li>
+                        <li><a href="">MasterClass</a></li>
+                        <li><a href="">SSC Model Test</a></li>
+                        <li><a href="">HSC Model Test</a></li>
+                        <li><a href="">SmartBook</a></li>
+                        <li><a href="">Quizzes</a></li>
+                        <li><a href="">Academic Videos</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h5 class="footer-links-header">About</h5>
+                    <ul>
+                        <li><a href="">Who we are</a></li>
+                        <li><a href="">Join</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Invite us</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h5 class="footer-links-header">Find us</h5>
+                    <ul>
+                        <li><a href="">Facebook Page</a></li>
+                        <li><a href="">YouTube Channel</a></li>
+                        <li><a href="">LIVE Channel</a></li>
+                        <li><a href="">Team Page</a></li>
+                        <li><a href="">Blog Page</a></li>
+                        <li><a href="">Global Page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 
 

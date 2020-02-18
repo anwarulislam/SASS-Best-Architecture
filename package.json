@@ -8,7 +8,7 @@
     "node-sass": "^4.9.2"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url src/assets/styles/main.scss src/assets/styles/main.css",
+    "css-build": "node-sass src/assets/styles/main.scss src/assets/styles/main.css --source-map true --source-map-embed true",
     "css-watch": "npm run css-build -- --watch",
     "live-server": "http-server src",
     "start": "npm run css-watch"

@@ -2,8 +2,36 @@ $footer-background-color: $scheme-main-bis !default
 $footer-color: false !default
 $footer-padding: 3rem 1.5rem 6rem !default
 
+footer
+  position: relative
+  ul
+    li
+      a
+        color: #ffffff
 .footer
-  background-color: $footer-background-color
-  padding: $footer-padding
+  padding-top: 5em
+  position: relative
+  height: 26rem
+  background: url(../images/footer.svg)
+  background-size: cover
+  background-repeat: no-repeat
+  text-align: left
+  color: white
+  display: flex
+  align-items: center
+
   @if $footer-color
     color: $footer-color
+
+    svg
+      height: 30vh
+
+.footer-table
+    position: absolute
+    z-index: 3
+    right: 0
+    top: -5em
+
+.footer-links-header
+  font-weight: bold
+
